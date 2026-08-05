@@ -1,0 +1,6 @@
+cache/
+data/*.rds
+logs/
+.Rhistory
+.RData
+.Rproj.user/

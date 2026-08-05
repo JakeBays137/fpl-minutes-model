@@ -1,0 +1,68 @@
+column,category,cor_points
+mng_clean_sheets,DROP — empty or redundant,NA
+mng_draw,DROP — empty or redundant,NA
+mng_goals_scored,DROP — empty or redundant,NA
+mng_loss,DROP — empty or redundant,NA
+mng_underdog_draw,DROP — empty or redundant,NA
+mng_underdog_win,DROP — empty or redundant,NA
+mng_win,DROP — empty or redundant,NA
+modified,DROP — empty or redundant,NA
+round,DROP — empty or redundant,NA
+xP,"LAG — ambiguous timing, use xP_lag1",0.6104669676461028
+assists,"OUTCOME — target only, never a same-row feature",NA
+bonus,"OUTCOME — target only, never a same-row feature",NA
+bps,"OUTCOME — target only, never a same-row feature",NA
+clean_sheets,"OUTCOME — target only, never a same-row feature",NA
+clearances_blocks_interceptions,"OUTCOME — target only, never a same-row feature",NA
+creativity,"OUTCOME — target only, never a same-row feature",NA
+defensive_contribution,"OUTCOME — target only, never a same-row feature",NA
+expected_assists,"OUTCOME — target only, never a same-row feature",NA
+expected_goal_involvements,"OUTCOME — target only, never a same-row feature",NA
+expected_goals,"OUTCOME — target only, never a same-row feature",NA
+expected_goals_conceded,"OUTCOME — target only, never a same-row feature",NA
+goals_conceded,"OUTCOME — target only, never a same-row feature",NA
+goals_scored,"OUTCOME — target only, never a same-row feature",NA
+ict_index,"OUTCOME — target only, never a same-row feature",NA
+influence,"OUTCOME — target only, never a same-row feature",NA
+minutes,"OUTCOME — target only, never a same-row feature",NA
+own_goals,"OUTCOME — target only, never a same-row feature",NA
+penalties_missed,"OUTCOME — target only, never a same-row feature",NA
+penalties_saved,"OUTCOME — target only, never a same-row feature",NA
+recoveries,"OUTCOME — target only, never a same-row feature",NA
+red_cards,"OUTCOME — target only, never a same-row feature",NA
+saves,"OUTCOME — target only, never a same-row feature",NA
+starts,"OUTCOME — target only, never a same-row feature",NA
+tackles,"OUTCOME — target only, never a same-row feature",NA
+team_a_score,"OUTCOME — target only, never a same-row feature",NA
+team_h_score,"OUTCOME — target only, never a same-row feature",NA
+threat,"OUTCOME — target only, never a same-row feature",NA
+total_points,"OUTCOME — target only, never a same-row feature",NA
+yellow_cards,"OUTCOME — target only, never a same-row feature",NA
+calendar_complete,SAFE — known before the deadline,NA
+club_rest_pl,SAFE — known before the deadline,NA
+date,SAFE — known before the deadline,NA
+days_since_prev,SAFE — known before the deadline,NA
+element,SAFE — known before the deadline,NA
+fixture,SAFE — known before the deadline,NA
+gw,SAFE — known before the deadline,NA
+hidden_fixture,SAFE — known before the deadline,NA
+is_restart,SAFE — known before the deadline,NA
+kickoff_time,SAFE — known before the deadline,NA
+match_index,SAFE — known before the deadline,NA
+name,SAFE — known before the deadline,NA
+name_clean,SAFE — known before the deadline,NA
+opponent_team,SAFE — known before the deadline,NA
+player_uid,SAFE — known before the deadline,NA
+position,SAFE — known before the deadline,NA
+rest_overstatement,SAFE — known before the deadline,NA
+season,SAFE — known before the deadline,NA
+short_rest_true,SAFE — known before the deadline,NA
+team,SAFE — known before the deadline,NA
+true_rest,SAFE — known before the deadline,NA
+was_home,SAFE — known before the deadline,NA
+price,"SNAPSHOT — deadline value, safe unlagged",0.3150365247818464
+selected,"SNAPSHOT — deadline value, safe unlagged",0.3118085806591887
+transfers_balance,"SNAPSHOT — deadline value, safe unlagged",0.11740550142516379
+transfers_in,"SNAPSHOT — deadline value, safe unlagged",0.2681077580426132
+transfers_out,"SNAPSHOT — deadline value, safe unlagged",0.14849151048335416
+value,"SNAPSHOT — deadline value, safe unlagged",0.3150365247818465

@@ -1,0 +1,45 @@
+name: FPL snapshot
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install packages
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::jsonlite
+            any::dplyr
+            any::readr
+
+      - name: Run the snapshot
+        run: Rscript snapshot_fpl.R
+
+      - name: Commit the snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/snapshots/
+          if git diff --staged --quiet; then
+            echo "nothing new to commit"
+          else
+            git commit -m "FPL snapshot"
+            git push
+          fi
